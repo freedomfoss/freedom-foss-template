@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Harden GitHub runner
-        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 #v2.13.0
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 #v2.13.2
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 #v4.3.0
-      - uses: italia/publiccode-parser-action@33aa2fbd2724e6033a4fc6711fa30a53982daed0 # v1.3.2
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 #v4.3.1
+      - uses: italia/publiccode-parser-action@9a920e460277e29353ecdd5534a4d26a2b211bea # v1.4.2
         with:
           publiccode: "publiccode.yml"
